@@ -1,0 +1,33 @@
+@import url(../../core.css);
+
+input {
+  width: 75%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.chips-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  margin: 0.5em;
+  padding: 0.5em 0.75em;
+  background-color: #eee;
+  border: 1px solid lightgrey;
+  border-radius: 1em;
+}
+
+.chip .remove {
+  display: none;
+  margin-left: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+  all: unset;
+}
+
+.chip.finalized .remove {
+  display: inherit;
+}
